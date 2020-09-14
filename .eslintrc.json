@@ -1,0 +1,42 @@
+{
+  "plugins": ["prettier","@typescript-eslint"],
+  "extends": ["react-app", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  },
+  "rules": {
+    "object-curly-spacing": ["warn", "always"],
+    "no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "args": "none"
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "args": "none"
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": [
+      "off",
+      {
+        "ignoreRestArgs": true
+      }
+    ],
+    "prettier/prettier": ["error"],
+    "react/jsx-filename-extension": 0,
+    "additional-rule": "off",
+    "react/prop-types": "warn"
+  }
+}
