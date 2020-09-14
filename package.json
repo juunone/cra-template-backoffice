@@ -1,6 +1,6 @@
 {
-  "name": "cra-template-office",
-  "version": "1.0.1",
+  "name": "cra-template-backoffice",
+  "version": "1.0.2",
   "private": false,
   "description": "This is template with typescript and mobx-state-tree for Create React App.",
   "main": "template.json",
@@ -17,10 +17,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/juunone/cra-template-office"
+    "url": "https://github.com/juunone/cra-template-backoffice"
   },
   "bugs": {
-    "url": "https://github.com/juunone/cra-template-office/issues"
+    "url": "https://github.com/juunone/cra-template-backoffice/issues"
   },
   "files": [
     "template",

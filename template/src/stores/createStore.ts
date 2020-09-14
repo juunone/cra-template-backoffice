@@ -7,7 +7,7 @@ export const createStore = (): RootStoreModel => {
     state: 'ready',
     projects: {
       isActivate: false,
-      title: 'cra-template-office',
+      title: 'cra-template-backoffice',
       message: 'for use',
     },
   })
