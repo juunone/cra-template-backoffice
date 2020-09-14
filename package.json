@@ -1,6 +1,6 @@
 {
   "name": "cra-template-backoffice",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "description": "This is template with typescript and mobx-state-tree for Create React App.",
   "main": "template.json",
@@ -9,7 +9,8 @@
     "cra",
     "cra-template",
     "template",
-    "mobx-state-tree-template"
+    "mobx-state-tree-template",
+    "typescript-template"
   ],
   "engines": {
     "node": ">=12",

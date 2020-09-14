@@ -8,7 +8,7 @@
 
 > yarn install at least "node": ">=12" it implements 'engine' in package.json.
 
-## Install template
+## Usage
 
 npx
 ```sh

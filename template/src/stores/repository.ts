@@ -17,6 +17,6 @@ export const findAll = (params: any) => {
     })
 }
 
-export const findOne = (riderAccountId: string) => {
-  return axios.get(`${URL}/${riderAccountId}`)
+export const findOne = (accountId: string) => {
+  return axios.get(`${URL}/${accountId}`)
 }

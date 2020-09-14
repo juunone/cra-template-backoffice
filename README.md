@@ -1,37 +1,52 @@
 <h1 align="center">cra-template-backoffice</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.1-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.3-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/play9round/servicemaker/blob/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
 </p>
 
-> yarn install at least "node": ">=12" it implements 'engine' in package.json.
+yarn install at least "node": ">=12" it implements 'engine' in package.json.
 
-## Install template
+# Usage
 
 npx
 ```sh
-yarn install
-npx create-react-app my-app --template backoffice
-```
-
-npm
-```sh
-npm init react-app my-app --template backoffice
+npx create-react-app %PROJECT_NAME% --template backoffice
 ```
 
 yarn
 ```sh
-yarn create react-app my-app --template backoffice
+yarn create react-app %PROJECT_NAME% --template backoffice
 ```
 
-## Usage
+>npx command installs most recent stable version of CRA from npm. --template parameter points to this template, note that cra-template- prefix is omitted.
+
+## Then
 
 ```sh
-cd my-app
-yarn install
+cd %PROJECT_NAME%
 yarn start
+```
+
+# Includes
+- typescript
+- mobx-state-tree
+- Material-ui
+- axios
+- eslint
+- prettier
+- craco
+
+## Code quality tools
+```sh
+yarn lint # run eslint src directory
+yarn format # run prettier src directory
+```
+
+## Build
+```sh
+yarn isready # run eslint, prettier and build src directory
 ```
 
 ## Author

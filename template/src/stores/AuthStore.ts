@@ -25,7 +25,7 @@ export const AuthStore = types
     fetchProjects: flow(function* fetchProjects() {
       self.state = 'pending'
       try {
-        self.projects = yield apiCall.findAll({ find: 'a' })
+        self.projects = yield apiCall.findAll({ name: 'john doe' })
         self.state = 'done'
       } catch (error) {
         console.error('Failed to fetch projects', error)

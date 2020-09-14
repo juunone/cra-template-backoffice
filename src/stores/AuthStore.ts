@@ -1,35 +1,35 @@
-import { types, Instance, flow } from 'mobx-state-tree'
-import { Auth } from '@/models/AuthModel'
-import * as apiCall from '@/stores/repository'
+import { types, Instance, flow } from "mobx-state-tree";
+import { Auth } from "@/models/AuthModel";
+import * as apiCall from "@/stores/repository";
 
-export type AuthModel = Instance<typeof AuthStore>
+export type AuthModel = Instance<typeof AuthStore>;
 
 const ProfileModel = types.model({
   isActivate: types.boolean,
   title: types.string,
-  message: types.string,
-})
+  message: types.string
+});
 
 export const AuthStore = types
   .compose(
     Auth,
     types.model({
       state: types.string,
-      projects: ProfileModel,
+      projects: ProfileModel
     })
   )
   .actions((self: any) => ({
     setChange(name: string) {
-      self.name = name
+      self.name = name;
     },
     fetchProjects: flow(function* fetchProjects() {
-      self.state = 'pending'
+      self.state = "pending";
       try {
-        self.projects = yield apiCall.findAll({ find: 'a' })
-        self.state = 'done'
+        self.projects = yield apiCall.findAll({ name: "john doe" });
+        self.state = "done";
       } catch (error) {
-        console.error('Failed to fetch projects', error)
-        self.state = 'error'
+        console.error("Failed to fetch projects", error);
+        self.state = "error";
       }
-    }),
-  }))
+    })
+  }));

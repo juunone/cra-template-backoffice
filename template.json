@@ -23,29 +23,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "shortid": "^2.2.15",
-    "typescript": "~3.7.2"
-  },
-  "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
-    "format": "prettier --ignore-path .gitignore --write 'src/**/*.{ts,tsx,scss,css,json}'",
-    "isready": "yarn format && yarn lint && yarn build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
+    "typescript": "~3.7.2",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/plugin-proposal-decorators": "^7.10.4",
     "@babel/plugin-proposal-optional-chaining": "^7.10.4",
@@ -59,5 +37,17 @@
     "mst-middlewares": "^3.17.2",
     "prettier": "^2.0.5",
     "remotedev": "^0.2.9"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color",
+    "format": "prettier --ignore-path .gitignore --write 'src/**/*.{ts,tsx,scss,css,json}'",
+    "isready": "yarn format && yarn lint && yarn build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
   }
 }
