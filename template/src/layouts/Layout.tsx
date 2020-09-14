@@ -18,7 +18,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
 import NotificationsIcon from '@material-ui/icons/Notifications'
 
 import { AppMenu, Footer } from '@/layouts'
-import LogoImg from 'assets/images/pngegg.png'
+import LogoImg from 'assets/images/react.png'
 
 interface LayoutWrapperProps {
   children: any
