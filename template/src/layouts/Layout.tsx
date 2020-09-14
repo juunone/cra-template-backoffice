@@ -60,7 +60,7 @@ const LayoutWrapper = ({ children }: LayoutWrapperProps) => {
             noWrap
             className={classes.title}
           >
-            OFFICE
+            BACKOFFICE
           </Typography>
           <IconButton color="inherit">
             <Badge badgeContent={4} color="secondary">
@@ -78,6 +78,7 @@ const LayoutWrapper = ({ children }: LayoutWrapperProps) => {
       >
         <div className={classes.toolbarIcon}>
           <img src={LogoImg} alt="logo" className={classes.toolbarIconImg} />
+          cra-template-backoffice
           <IconButton onClick={handleDrawerClose} color="inherit">
             <ChevronLeftIcon />
           </IconButton>
@@ -117,7 +118,7 @@ const useStyles = makeStyles((theme) => ({
     ...theme.mixins.toolbar,
   },
   toolbarIconImg: {
-    width: '25%',
+    width: '20%',
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
