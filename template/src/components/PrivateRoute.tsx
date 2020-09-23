@@ -2,12 +2,7 @@ import React, { Suspense } from 'react'
 import { Route, Redirect } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
-interface PrivateRouteProps {
-  component: any
-  isAuthenticated?: boolean
-  path: string
-  exact?: boolean
-}
+import { PrivateRouteProps } from '@/compiler/types'
 
 const PrivateRoute = ({
   component: Component,

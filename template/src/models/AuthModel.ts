@@ -6,5 +6,4 @@ export const AuthBase = types.model('AuthBase', {
 
 export const Auth = types.model('AuthModel', {
   name: types.string,
-  // dummy: types.optional(types.array(AuthBase), [])
 })

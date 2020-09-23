@@ -6,17 +6,16 @@ import {
   Redirect,
 } from 'react-router-dom'
 import { ErrorBoundary } from 'react-error-boundary'
-
 import { ThemeProvider } from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 
-import { ErrorFallback } from './ErrorBoundary'
+import { renderPrivatRouterProps } from '@/compiler/types'
 import PrivateRoute from '@/components/PrivateRoute'
 import { SignIn, SignUp, NotFound } from '@/pages'
+import { ErrorFallback } from './ErrorBoundary'
 import theme from './theme'
 
 const shortid = require('shortid')
-
 const routes = [
   {
     id: shortid.generate(),
@@ -31,13 +30,6 @@ const routes = [
     component: lazy(() => import('@/pages/Catalog')),
   },
 ]
-
-interface renderPrivatRouterProps {
-  id: string
-  path: string
-  exact: boolean
-  component: React.ReactNode
-}
 
 const renderPrivatRouter = () => {
   return routes.map(

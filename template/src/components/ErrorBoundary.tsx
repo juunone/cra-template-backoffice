@@ -1,9 +1,6 @@
 import React from 'react'
 
-interface ErrorFallbackProps {
-  error?: Error
-  resetErrorBoundary?: any
-}
+import { ErrorFallbackProps } from '@/compiler/types'
 
 export function ErrorFallback({
   error,

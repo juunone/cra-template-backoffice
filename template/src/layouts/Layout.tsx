@@ -18,11 +18,8 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
 import NotificationsIcon from '@material-ui/icons/Notifications'
 
 import { AppMenu, Footer } from '@/layouts'
+import { LayoutWrapperProps } from '@/compiler/types'
 import LogoImg from 'assets/images/react.png'
-
-interface LayoutWrapperProps {
-  children: any
-}
 
 const LayoutWrapper = ({ children }: LayoutWrapperProps) => {
   const classes = useStyles()
@@ -111,7 +108,6 @@ const useStyles = makeStyles((theme) => ({
   toolbarIcon: {
     display: 'flex',
     alignItems: 'center',
-    // justifyContent: 'flex-end',
     justifyContent: 'space-between',
     padding: '0 8px',
     borderBottom: `1px solid #03346b`,
@@ -137,7 +133,6 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: 36,
-    // color: theme.palette.common.white,
   },
   menuButtonHidden: {
     display: 'none',
@@ -149,7 +144,6 @@ const useStyles = makeStyles((theme) => ({
     position: 'relative',
     whiteSpace: 'nowrap',
     width: drawerWidth,
-    // backgroundColor: theme.palette.primary.main,
     backgroundColor: '#021529',
     color: theme.palette.common.white,
     transition: theme.transitions.create('width', {

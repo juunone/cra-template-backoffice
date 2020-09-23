@@ -3,12 +3,7 @@ import ListItem from '@material-ui/core/ListItem'
 import { NavLink, NavLinkProps } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
-export interface AppMenuItemComponentProps {
-  className?: string
-  link?: string | null
-  onClick?: (event: React.MouseEvent<HTMLElement>) => void
-  children: React.ReactNode
-}
+import { AppMenuItemComponentProps } from '@/compiler/types'
 
 const AppMenuItemComponent: React.FC<AppMenuItemComponentProps> = (props) => {
   const { className, onClick, link, children } = props

@@ -66,7 +66,7 @@ const SignIn = () => {
             </Button>
           </Link>
           <Grid container>
-            {/* <Grid item xs>
+            {/* <Grid item xs> // it's find password route link
               <Link href="#" variant="body2">
                 Forgot password?
               </Link>
