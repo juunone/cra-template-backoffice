@@ -1,6 +1,6 @@
 <h1 align="center">cra-template-backoffice</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.7-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://badge.fury.io/js/cra-template-backoffice.svg" />
   <a href="https://github.com/play9round/servicemaker/blob/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
