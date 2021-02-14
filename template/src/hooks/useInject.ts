@@ -1,5 +1,3 @@
-//references https://github.com/MargaretKrutikova/mst-react-ts-guide
-
 import { useStore } from '../components/StoreProvider'
 import { RootStoreModel } from '../stores/RootStore'
 
